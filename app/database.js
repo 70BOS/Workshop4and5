@@ -60,11 +60,13 @@ var initialData = {
           "contents": "hope everything is ok!",
           // The date the comment was posted.
           // 01/24/16 22:00 EST
+          "likeCounter": [],
           "postDate": 1453690800000
         },
         {
           "author": 3,
           "contents": "sending hugs your way",
+          "likeCounter": [],
           "postDate": 1453690800000
         }
       ]
@@ -90,7 +92,7 @@ var initialData = {
       "contents": []
     }
   }
-}
+};
 
 var data = JSON.parse(localStorage.getItem('facebook_data'));
 if (data === null) {
